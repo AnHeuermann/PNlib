@@ -1,0 +1,32 @@
+Environment - simulationEnvironment:
+startTime=0
+stopTime=10
+tolerance=1e-06
+numberOfIntervals=2500
+stepSize=0.004
+Regular simulation: ./PNlib_2.2_PNlib.Examples.ConTest.LoopAndArcweight  -abortSlowSimulation -alarm=480  -emit_protected -lv LOG_STATS
+LOG_SUCCESS       | info    | The initialization finished successfully without homotopy method.
+LOG_STATS         | info    | ### STATISTICS ###
+|                 | |       | | timer
+|                 | |       | | |   0.00569536s          reading init.xml
+|                 | |       | | |  0.000514539s          reading info.xml
+|                 | |       | | |  0.000240488s [  0.3%] pre-initialization
+|                 | |       | | |  0.000236762s [  0.3%] initialization
+|                 | |       | | |  0.000250868s [  0.3%] steps
+|                 | |       | | |   0.00120961s [  1.4%] solver (excl. callbacks)
+|                 | |       | | |    0.0025578s [  3.1%] creating output-file
+|                 | |       | | |    0.0351877s [ 42.0%] event-handling
+|                 | |       | | |   0.00331635s [  4.0%] overhead
+|                 | |       | | |     0.040692s [ 48.6%] simulation
+|                 | |       | | |    0.0836916s [100.0%] total
+|                 | |       | | events
+|                 | |       | | |     1 state events
+|                 | |       | | |     0 time events
+|                 | |       | | solver: dassl
+|                 | |       | | |    45 steps taken
+|                 | |       | | |    45 calls of functionODE
+|                 | |       | | |    43 evaluations of jacobian
+|                 | |       | | |     0 error test failures
+|                 | |       | | |     0 convergence test failures
+|                 | |       | | | 0.000562579s time of jacobian evaluation
+LOG_SUCCESS       | info    | The simulation finished successfully.
