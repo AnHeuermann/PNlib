@@ -1,0 +1,32 @@
+Environment - simulationEnvironment:
+startTime=0
+stopTime=40
+tolerance=1e-06
+numberOfIntervals=2500
+stepSize=0.016
+Regular simulation: ./PNlib_2.2_PNlib.Examples.Models.BicoloredPlaces.Aquarium  -abortSlowSimulation -alarm=480  -emit_protected -lv LOG_STATS
+LOG_SUCCESS       | info    | The initialization finished successfully without homotopy method.
+LOG_STATS         | info    | ### STATISTICS ###
+|                 | |       | | timer
+|                 | |       | | |    0.0140812s          reading init.xml
+|                 | |       | | |   0.00102552s          reading info.xml
+|                 | |       | | |  0.000411938s [  0.2%] pre-initialization
+|                 | |       | | |   0.00038089s [  0.2%] initialization
+|                 | |       | | |  0.000293958s [  0.1%] steps
+|                 | |       | | |   0.00208293s [  0.9%] solver (excl. callbacks)
+|                 | |       | | |   0.00564734s [  2.5%] creating output-file
+|                 | |       | | |     0.100527s [ 44.3%] event-handling
+|                 | |       | | |   0.00375881s [  1.7%] overhead
+|                 | |       | | |     0.113582s [ 50.1%] simulation
+|                 | |       | | |     0.226685s [100.0%] total
+|                 | |       | | events
+|                 | |       | | |     0 state events
+|                 | |       | | |     0 time events
+|                 | |       | | solver: dassl
+|                 | |       | | |    48 steps taken
+|                 | |       | | |    60 calls of functionODE
+|                 | |       | | |    20 evaluations of jacobian
+|                 | |       | | |     0 error test failures
+|                 | |       | | |     0 convergence test failures
+|                 | |       | | | 0.00188516s time of jacobian evaluation
+LOG_SUCCESS       | info    | The simulation finished successfully.
