@@ -52,7 +52,7 @@ jobs:
     needs: test
     permissions:
       contents: write
-    if: startsWith(github.ref, 'master')
+    if: endsWith(github.ref, 'master')
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
 

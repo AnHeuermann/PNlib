@@ -32,14 +32,14 @@ Download [PNlib v2.2 (2019-10-24)][release-v-2-2]
 
 ## Compatibility
 
-  * Works in OpenModelica (latest release)
+  * Coverage with OpenModelica master and latest PNlib release:
 
     ![Pnlib omc-master](https://libraries.openmodelica.org/branches/history/master/PNlib.svg)
 
-    Coverage reports:
+  * OpenModelica coverage reports:
 
       * Release: [Nightly coverage reports][coverage-link]
-      * Master: [Last commit][gh-pages-link]
+      * Master: [Latest commit][gh-pages-link]
 
   * Works in Dymola 2017/2019/2020
 
