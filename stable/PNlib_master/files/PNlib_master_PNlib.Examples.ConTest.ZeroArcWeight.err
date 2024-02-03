@@ -1,0 +1,209 @@
+Running: ./testmodel.py --libraries=/home/runner/.openmodelica/libraries/ --ompython_omhome= PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight.conf.json
+loadFile("/home/runner/.openmodelica/libraries/ModelicaServices 4.0.0+maint.om/package.mo", uses=false)
+loadFile("/home/runner/.openmodelica/libraries/Complex 4.0.0+maint.om/package.mo", uses=false)
+loadFile("/home/runner/.openmodelica/libraries/Modelica 4.0.0+maint.om/package.mo", uses=false)
+loadFile("/home/runner/work/PNlib/PNlib/PNlib/package.mo", uses=false)
+Using package PNlib with version 2.2 (/home/runner/work/PNlib/PNlib/PNlib/package.mo)
+Using package Modelica with version 4.0.0 (/home/runner/.openmodelica/libraries/Modelica 4.0.0+maint.om/package.mo)
+Using package Complex with version 4.0.0 (/home/runner/.openmodelica/libraries/Complex 4.0.0+maint.om/package.mo)
+Using package ModelicaServices with version 4.0.0 (/home/runner/.openmodelica/libraries/ModelicaServices 4.0.0+maint.om/package.mo)
+Running command: translateModel(PNlib.Examples.ConTest.ZeroArcWeight,tolerance=1e-06,outputFormat="mat",numberOfIntervals=5000,variableFilter="P1.t|P2.t|P3.t|T1.fire|T1.instantaneousSpeed|T1.maximumSpeed|time",fileNamePrefix="PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight")
+translateModel(PNlib.Examples.ConTest.ZeroArcWeight,tolerance=1e-06,outputFormat="mat",numberOfIntervals=5000,variableFilter="P1.t|P2.t|P3.t|T1.fire|T1.instantaneousSpeed|T1.maximumSpeed|time",fileNamePrefix="PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight")
+Notification: Performance of loadFile(/home/runner/.openmodelica/libraries/ModelicaServices 4.0.0+maint.om/package.mo): time 0.00101/0.00101, allocations: 98.03 kB / 15.59 MB, free: 5.273 MB / 13.93 MB
+Notification: Performance of loadFile(/home/runner/.openmodelica/libraries/Complex 4.0.0+maint.om/package.mo): time 0.001042/0.001043, allocations: 175.8 kB / 16.51 MB, free: 4.668 MB / 13.93 MB
+Notification: Performance of loadFile(/home/runner/.openmodelica/libraries/Modelica 4.0.0+maint.om/package.mo): time 1.639/1.639, allocations: 222.1 MB / 239.4 MB, free: 11.1 MB / 202.7 MB
+Notification: Performance of loadFile(/home/runner/work/PNlib/PNlib/PNlib/package.mo): time 0.09599/0.09599, allocations: 16.58 MB / 306.2 MB, free: 10.56 MB / 250.7 MB
+Notification: Performance of FrontEnd - loaded program: time 0.0004779/0.000478, allocations: 12.41 kB / 370.6 MB, free: 44.88 MB / 298.7 MB
+Notification: Performance of FrontEnd - Absyn->SCode: time 0.0772/0.07769, allocations: 53.47 MB / 424.1 MB, free: 5.918 MB / 298.7 MB
+Notification: Performance of NFInst.instantiate(PNlib.Examples.ConTest.ZeroArcWeight): time 0.003875/0.08161, allocations: 3.417 MB / 427.5 MB, free: 2.496 MB / 298.7 MB
+Notification: Performance of NFInst.instExpressions: time 0.004793/0.08642, allocations: 2.856 MB / 430.3 MB, free: 15.64 MB / 314.7 MB
+Notification: Performance of NFInst.updateImplicitVariability: time 0.0004707/0.08691, allocations: 19.94 kB / 430.4 MB, free: 15.62 MB / 314.7 MB
+Notification: Performance of NFTyping.typeComponents: time 0.0005277/0.08745, allocations: 289.7 kB / 430.6 MB, free: 15.33 MB / 314.7 MB
+Notification: Performance of NFTyping.typeBindings: time 0.000772/0.08824, allocations: 277.8 kB / 430.9 MB, free: 15.06 MB / 314.7 MB
+Notification: Performance of NFTyping.typeClassSections: time 0.002537/0.09079, allocations: 1.36 MB / 432.3 MB, free: 13.7 MB / 314.7 MB
+Notification: Performance of NFFlatten.flatten: time 0.002674/0.09349, allocations: 3.64 MB / 435.9 MB, free: 10.05 MB / 314.7 MB
+Notification: Performance of NFFlatten.resolveConnections: time 0.0006874/0.09419, allocations: 428.5 kB / 436.3 MB, free: 9.617 MB / 314.7 MB
+Notification: Performance of NFEvalConstants.evaluate: time 0.0009018/0.0951, allocations: 1.317 MB / 437.6 MB, free: 8.297 MB / 314.7 MB
+Notification: Performance of NFSimplifyModel.simplify: time 0.001043/0.09615, allocations: 0.902 MB / 438.5 MB, free: 7.391 MB / 314.7 MB
+Notification: Performance of NFPackage.collectConstants: time 0.00028/0.09645, allocations: 224 kB / 438.8 MB, free: 7.172 MB / 314.7 MB
+Notification: Performance of NFFlatten.collectFunctions: time 0.000842/0.0973, allocations: 0.5971 MB / 439.4 MB, free: 6.574 MB / 314.7 MB
+Notification: Performance of NFScalarize.scalarize: time 0.0003349/0.09765, allocations: 434.5 kB / 439.8 MB, free: 6.148 MB / 314.7 MB
+Notification: Performance of NFVerifyModel.verify: time 0.0009622/0.09862, allocations: 0.9916 MB / 440.8 MB, free: 5.152 MB / 314.7 MB
+Notification: Performance of NFConvertDAE.convert: time 0.002019/0.1007, allocations: 2.482 MB / 443.3 MB, free: 2.664 MB / 314.7 MB
+Notification: Performance of FrontEnd - DAE generated: time 5.15e-06/0.1007, allocations: 0 / 443.3 MB, free: 2.664 MB / 314.7 MB
+Notification: Performance of FrontEnd: time 1.283e-06/0.1007, allocations: 3.938 kB / 443.3 MB, free: 2.66 MB / 314.7 MB
+Notification: Performance of Transformations before backend: time 1.512e-05/0.1007, allocations: 0 / 443.3 MB, free: 2.66 MB / 314.7 MB
+Notification: Model statistics after passing the front-end and creating the data structures used by the back-end:
+ * Number of equations: 495
+ * Number of variables: 495
+Notification: Performance of Generate backend data structure: time 0.004222/0.1049, allocations: 2.897 MB / 446.2 MB, free: 15.52 MB / 330.7 MB
+Notification: Performance of prepare preOptimizeDAE: time 4.136e-05/0.105, allocations: 8.031 kB / 446.2 MB, free: 15.51 MB / 330.7 MB
+Notification: Performance of preOpt normalInlineFunction (simulation): time 0.002299/0.1073, allocations: 394.5 kB / 446.6 MB, free: 15.12 MB / 330.7 MB
+Notification: Performance of preOpt evaluateParameters (simulation): time 0.00158/0.1089, allocations: 0.8413 MB / 447.4 MB, free: 14.24 MB / 330.7 MB
+Notification: Performance of preOpt simplifyIfEquations (simulation): time 0.0002661/0.1092, allocations: 410.2 kB / 447.8 MB, free: 13.78 MB / 330.7 MB
+Notification: Performance of preOpt expandDerOperator (simulation): time 0.0003009/0.1095, allocations: 212 kB / 448 MB, free: 13.57 MB / 330.7 MB
+Notification: Performance of preOpt clockPartitioning (simulation): time 0.005378/0.1149, allocations: 3.482 MB / 451.5 MB, free: 9.965 MB / 330.7 MB
+Notification: Performance of preOpt findStateOrder (simulation): time 4.495e-05/0.1149, allocations: 11.84 kB / 451.5 MB, free: 9.953 MB / 330.7 MB
+Notification: Performance of preOpt replaceEdgeChange (simulation): time 0.0002438/0.1152, allocations: 104 kB / 451.6 MB, free: 9.852 MB / 330.7 MB
+Notification: Performance of preOpt inlineArrayEqn (simulation): time 0.0002499/0.1154, allocations: 170.7 kB / 451.8 MB, free: 9.684 MB / 330.7 MB
+Notification: Performance of preOpt removeEqualRHS (simulation): time 0.00431/0.1198, allocations: 2.513 MB / 454.3 MB, free: 7.164 MB / 330.7 MB
+Notification: Performance of preOpt removeSimpleEquations (simulation): time 0.00933/0.1291, allocations: 7.114 MB / 461.4 MB, free: 15.84 MB / 346.7 MB
+Notification: Performance of preOpt comSubExp (simulation): time 0.004077/0.1332, allocations: 3.268 MB / 464.7 MB, free: 12.53 MB / 346.7 MB
+Notification: Performance of preOpt resolveLoops (simulation): time 0.003081/0.1363, allocations: 3.029 MB / 467.7 MB, free: 9.484 MB / 346.7 MB
+Notification: Performance of preOpt evalFunc (simulation): time 0.005904/0.1422, allocations: 8.399 MB / 476.1 MB, free: 15.25 MB / 362.7 MB
+Notification: Performance of preOpt encapsulateWhenConditions (simulation): time 0.003476/0.1457, allocations: 2.013 MB / 478.1 MB, free: 13.18 MB / 362.7 MB
+Notification: Performance of pre-optimization done (n=194): time 3.737e-06/0.1458, allocations: 4 kB / 478.1 MB, free: 13.17 MB / 362.7 MB
+Notification: Performance of matching and sorting (n=194): time 0.01033/0.1561, allocations: 6.124 MB / 484.2 MB, free: 6.875 MB / 362.7 MB
+Notification: Performance of inlineWhenForInitialization (initialization): time 0.0006208/0.1568, allocations: 1.455 MB / 485.7 MB, free: 5.141 MB / 362.7 MB
+Notification: Performance of selectInitializationVariablesDAE (initialization): time 0.001119/0.1579, allocations: 0.8348 MB / 486.5 MB, free: 4.293 MB / 362.7 MB
+Notification: Performance of collectPreVariables (initialization): time 0.0002009/0.1581, allocations: 125.7 kB / 486.6 MB, free: 4.164 MB / 362.7 MB
+Notification: Performance of collectInitialEqns (initialization): time 0.000353/0.1585, allocations: 0.5973 MB / 487.2 MB, free: 3.555 MB / 362.7 MB
+Notification: Performance of collectInitialBindings (initialization): time 0.0003576/0.1588, allocations: 0.494 MB / 487.7 MB, free: 3.055 MB / 362.7 MB
+Notification: Performance of simplifyInitialFunctions (initialization): time 0.0008968/0.1597, allocations: 0.5762 MB / 488.3 MB, free: 2.469 MB / 362.7 MB
+Notification: Performance of setup shared object (initialization): time 5.227e-05/0.1598, allocations: 345.9 kB / 488.6 MB, free: 2.125 MB / 362.7 MB
+Notification: Performance of preBalanceInitialSystem (initialization): time 0.001733/0.1615, allocations: 1.153 MB / 489.8 MB, free: 0.9688 MB / 362.7 MB
+Notification: Performance of partitionIndependentBlocks (initialization): time 0.002785/0.1643, allocations: 2.139 MB / 491.9 MB, free: 14.38 MB / 378.7 MB
+Notification: Performance of analyzeInitialSystem (initialization): time 0.004727/0.1691, allocations: 4.837 MB / 496.8 MB, free: 8.793 MB / 378.7 MB
+Notification: Performance of solveInitialSystemEqSystem (initialization): time 2.001e-05/0.1691, allocations: 8 kB / 496.8 MB, free: 8.785 MB / 378.7 MB
+Notification: Performance of matching and sorting (n=378) (initialization): time 0.006261/0.1754, allocations: 4.598 MB / 0.4896 GB, free: 3.984 MB / 378.7 MB
+Notification: Performance of prepare postOptimizeDAE: time 0.0005053/0.1759, allocations: 0.9927 MB / 0.4906 GB, free: 2.801 MB / 378.7 MB
+Notification: Performance of postOpt simplifyComplexFunction (initialization): time 0.003176/0.1791, allocations: 1.977 MB / 0.4925 GB, free: 0.7461 MB / 378.7 MB
+Notification: Performance of postOpt tearingSystem (initialization): time 0.0009882/0.1801, allocations: 204.7 kB / 0.4927 GB, free: 0.543 MB / 378.7 MB
+Notification: Performance of postOpt solveSimpleEquations (initialization): time 0.001222/0.1813, allocations: 327.2 kB / 0.493 GB, free: 228 kB / 378.7 MB
+Notification: Performance of postOpt calculateStrongComponentJacobians (initialization): time 0.2127/0.394, allocations: 0.7194 MB / 0.4937 GB, free: 74.18 MB / 378.7 MB
+Notification: Performance of postOpt simplifyAllExpressions (initialization): time 0.001897/0.396, allocations: 330.6 kB / 0.4941 GB, free: 74.18 MB / 378.7 MB
+Notification: Performance of postOpt collapseArrayExpressions (initialization): time 0.0002518/0.3962, allocations: 151.2 kB / 0.4942 GB, free: 74.18 MB / 378.7 MB
+Warning: Assuming fixed start value for the following 54 variables:
+         P3.enableOut.Index:DISCRETE(fixed = true protected = true )  type: Integer
+         P3.enableOut.endWhile:DISCRETE(fixed = true protected = true )  type: Boolean
+         P3.enableOut.sumEnablingProbTAout:DISCRETE(fixed = true protected = true )  "sum of the enabling probabilities of the active output transitions" type: Real
+         P3.enableOut.posTE:DISCRETE(fixed = true protected = true )  "possible enabled transition" type: Integer
+         P3.enableOut.k:DISCRETE(fixed = true protected = true )  "iteration index" type: Integer
+         P3.enableOut.nTAout:DISCRETE(fixed = true protected = true )  "number of active output transitions" type: Integer
+         P3.enableOut.nremTAout:DISCRETE(fixed = true protected = true )  "number of remaining active output transitions" type: Integer
+         P3.enableOut.arcWeightSum:DISCRETE(fixed = true protected = true )  "arc weight sum" type: Real
+         P3.enableIn.posTE:DISCRETE(fixed = true protected = true )  "possible enabled transition" type: Integer
+         P3.enableIn.k:DISCRETE(fixed = true protected = true )  "iteration index" type: Integer
+         P3.enableIn.endWhile:DISCRETE(fixed = true protected = true )  type: Boolean
+         P3.enableIn.sumEnablingProbTAin:DISCRETE(fixed = true protected = true )  "sum of the enabling probabilities of the active input transitions" type: Real
+         P3.enableIn.nTAin:DISCRETE(fixed = true protected = true )  "number ofactive input transitions" type: Integer
+         P3.enableIn.nremTAin:DISCRETE(fixed = true protected = true )  "number of remaining active input transitions" type: Integer
+         P3.enableIn.Index:DISCRETE(fixed = true protected = true )  "priority Index" type: Integer
+         P3.enableIn.arcWeightSum:DISCRETE(fixed = true protected = true )  "arc weight sum" type: Real
+         P2.enableOut.posTE:DISCRETE(fixed = true protected = true )  "possible enabled transition" type: Integer
+         P2.enableOut.k:DISCRETE(fixed = true protected = true )  "iteration index" type: Integer
+         P2.enableOut.endWhile:DISCRETE(fixed = true protected = true )  type: Boolean
+         P2.enableOut.sumEnablingProbTAout:DISCRETE(fixed = true protected = true )  "sum of the enabling probabilities of the active output transitions" type: Real
+         P2.enableOut.nTAout:DISCRETE(fixed = true protected = true )  "number of active output transitions" type: Integer
+         P2.enableOut.nremTAout:DISCRETE(fixed = true protected = true )  "number of remaining active output transitions" type: Integer
+         P2.enableOut.Index:DISCRETE(fixed = true protected = true )  type: Integer
+         P2.enableOut.arcWeightSum:DISCRETE(fixed = true protected = true )  "arc weight sum" type: Real
+         P1.enableOut.posTE:DISCRETE(fixed = true protected = true )  "possible enabled transition" type: Integer
+         P1.enableOut.k:DISCRETE(fixed = true protected = true )  "iteration index" type: Integer
+         P1.enableOut.endWhile:DISCRETE(fixed = true protected = true )  type: Boolean
+         P1.enableOut.sumEnablingProbTAout:DISCRETE(fixed = true protected = true )  "sum of the enabling probabilities of the active output transitions" type: Real
+         P1.enableOut.nTAout:DISCRETE(fixed = true protected = true )  "number of active output transitions" type: Integer
+         P1.enableOut.nremTAout:DISCRETE(fixed = true protected = true )  "number of remaining active output transitions" type: Integer
+         P1.enableOut.Index:DISCRETE(fixed = true protected = true )  type: Integer
+         P1.enableOut.arcWeightSum:DISCRETE(fixed = true protected = true )  "arc weight sum" type: Real
+         P3.disMarksIn.anytrue:DISCRETE(fixed = true protected = true )  type: Boolean
+         P3.disMarksOut.anytrue:DISCRETE(fixed = true protected = true )  type: Boolean
+         P2.disMarksIn.anytrue:DISCRETE(fixed = true protected = true )  type: Boolean
+         P2.disMarksOut.anytrue:DISCRETE(fixed = true protected = true )  type: Boolean
+         P1.disMarksIn.anytrue:DISCRETE(fixed = true protected = true )  type: Boolean
+         P1.disMarksOut.anytrue:DISCRETE(fixed = true protected = true )  type: Boolean
+         P2.enableIn.Index:DISCRETE(fixed = true protected = true )  "priority Index" type: Integer
+         P2.enableIn.endWhile:DISCRETE(fixed = true protected = true )  type: Boolean
+         P2.enableIn.sumEnablingProbTAin:DISCRETE(fixed = true protected = true )  "sum of the enabling probabilities of the active input transitions" type: Real
+         P2.enableIn.posTE:DISCRETE(fixed = true protected = true )  "possible enabled transition" type: Integer
+         P2.enableIn.k:DISCRETE(fixed = true protected = true )  "iteration index" type: Integer
+         P2.enableIn.nTAin:DISCRETE(fixed = true protected = true )  "number ofactive input transitions" type: Integer
+         P2.enableIn.nremTAin:DISCRETE(fixed = true protected = true )  "number of remaining active input transitions" type: Integer
+         P2.enableIn.arcWeightSum:DISCRETE(fixed = true protected = true )  "arc weight sum" type: Real
+         P1.enableIn.Index:DISCRETE(fixed = true protected = true )  "priority Index" type: Integer
+         P1.enableIn.endWhile:DISCRETE(fixed = true protected = true )  type: Boolean
+         P1.enableIn.sumEnablingProbTAin:DISCRETE(fixed = true protected = true )  "sum of the enabling probabilities of the active input transitions" type: Real
+         P1.enableIn.posTE:DISCRETE(fixed = true protected = true )  "possible enabled transition" type: Integer
+         P1.enableIn.k:DISCRETE(fixed = true protected = true )  "iteration index" type: Integer
+         P1.enableIn.nTAin:DISCRETE(fixed = true protected = true )  "number ofactive input transitions" type: Integer
+         P1.enableIn.nremTAin:DISCRETE(fixed = true protected = true )  "number of remaining active input transitions" type: Integer
+         P1.enableIn.arcWeightSum:DISCRETE(fixed = true protected = true )  "arc weight sum" type: Real
+Notification: Model statistics after passing the back-end for initialization:
+ * Number of independent subsystems: 134
+ * Number of states: 0 ()
+ * Number of discrete variables: 309 ($PRE.P3.enableOut.Index,P3.enableOut.Index,$PRE.P3.enableOut.endWhile,P3.enableOut.endWhile,$PRE.P3.enableOut.sumEnablingProbTAout,P3.enableOut.sumEnablingProbTAout,P3.enableOut.randNum,$PRE.P3.enableOut.randNum,P3.enableOut.state128[4],$PRE.P3.enableOut.state128[4],P3.enableOut.state128[3],$PRE.P3.enableOut.state128[3],P3.enableOut.state128[2],$PRE.P3.enableOut.state128[2],P3.enableOut.state128[1],$PRE.P3.enableOut.state128[1],$PRE.P3.enableOut.posTE,P3.enableOut.posTE,$PRE.P3.enableOut.k,P3.enableOut.k,$PRE.P3.enableOut.nTAout,P3.enableOut.nTAout,$PRE.P3.enableOut.nremTAout,P3.enableOut.nremTAout,$PRE.P3.enableOut.arcWeightSum,P3.enableOut.arcWeightSum,P3.delayPassedOut.numtrue,P3.delayPassedOut.anytrue,$whenCondition9,$PRE.P3.enableIn.posTE,P3.enableIn.posTE,$PRE.P3.enableIn.k,P3.enableIn.k,$PRE.P3.enableIn.endWhile,P3.enableIn.endWhile,P3.enableIn.randNum,$PRE.P3.enableIn.randNum,P3.enableIn.state128[4],$PRE.P3.enableIn.state128[4],P3.enableIn.state128[3],$PRE.P3.enableIn.state128[3],P3.enableIn.state128[2],$PRE.P3.enableIn.state128[2],P3.enableIn.state128[1],$PRE.P3.enableIn.state128[1],P3.enableIn.cumEnablingProb[1],$PRE.P3.enableIn.cumEnablingProb[1],$PRE.P3.enableIn.sumEnablingProbTAin,P3.enableIn.sumEnablingProbTAin,$PRE.P3.enableIn.nTAin,P3.enableIn.nTAin,$PRE.P3.enableIn.nremTAin,P3.enableIn.nremTAin,P3.enableIn.remTAin[1],$PRE.P3.enableIn.remTAin[1],$PRE.P3.enableIn.Index,P3.enableIn.Index,$PRE.P3.enableIn.arcWeightSum,P3.enableIn.arcWeightSum,P3.enableIn.disTAin[1],$PRE.P3.enableIn.disTAin[1],$PRE.P2.enableOut.posTE,P2.enableOut.posTE,$PRE.P2.enableOut.k,P2.enableOut.k,$PRE.P2.enableOut.endWhile,P2.enableOut.endWhile,P2.enableOut.randNum,$PRE.P2.enableOut.randNum,P2.enableOut.state128[4],$PRE.P2.enableOut.state128[4],P2.enableOut.state128[3],$PRE.P2.enableOut.state128[3],P2.enableOut.state128[2],$PRE.P2.enableOut.state128[2],P2.enableOut.state128[1],$PRE.P2.enableOut.state128[1],P2.enableOut.cumEnablingProb[1],$PRE.P2.enableOut.cumEnablingProb[1],$PRE.P2.enableOut.sumEnablingProbTAout,P2.enableOut.sumEnablingProbTAout,$PRE.P2.enableOut.nTAout,P2.enableOut.nTAout,$PRE.P2.enableOut.nremTAout,P2.enableOut.nremTAout,P2.enableOut.remTAout[1],$PRE.P2.enableOut.remTAout[1],$PRE.P2.enableOut.Index,P2.enableOut.Index,$PRE.P2.enableOut.arcWeightSum,P2.enableOut.arcWeightSum,P2.enableOut.disTAout[1],$PRE.P2.enableOut.disTAout[1],$PRE.P1.enableOut.posTE,P1.enableOut.posTE,$PRE.P1.enableOut.k,P1.enableOut.k,$PRE.P1.enableOut.endWhile,P1.enableOut.endWhile,P1.enableOut.randNum,$PRE.P1.enableOut.randNum,P1.enableOut.state128[4],$PRE.P1.enableOut.state128[4],P1.enableOut.state128[3],$PRE.P1.enableOut.state128[3],P1.enableOut.state128[2],$PRE.P1.enableOut.state128[2],P1.enableOut.state128[1],$PRE.P1.enableOut.state128[1],P1.enableOut.cumEnablingProb[1],$PRE.P1.enableOut.cumEnablingProb[1],$PRE.P1.enableOut.sumEnablingProbTAout,P1.enableOut.sumEnablingProbTAout,$PRE.P1.enableOut.nTAout,P1.enableOut.nTAout,$PRE.P1.enableOut.nremTAout,P1.enableOut.nremTAout,P1.enableOut.remTAout[1],$PRE.P1.enableOut.remTAout[1],$PRE.P1.enableOut.Index,P1.enableOut.Index,$PRE.P1.enableOut.arcWeightSum,P1.enableOut.arcWeightSum,P1.enableOut.disTAout[1],$PRE.P1.enableOut.disTAout[1],$PRE.P2.disMarksInOut,P2.outTransition[1].tokenInOut,$PRE.P1.disMarksInOut,P1.outTransition[1].tokenInOut,$PRE.P3.disMarksIn.anytrue,$PRE.P3.disMarksOut.anytrue,P3.disMarksInOut,$whenCondition8,$PRE.P2.disMarksIn.anytrue,$PRE.P2.disMarksOut.anytrue,P2.disMarksInOut,$whenCondition7,$PRE.P1.disMarksIn.anytrue,$PRE.P1.disMarksOut.anytrue,P1.disMarksInOut,$whenCondition6,P3.disMarksOut.numtrue,P3.disMarksOut.anytrue,P2.disMarksIn.numtrue,P2.disMarksIn.anytrue,P1.emptying.numtrue,P1.emptying.anytrue,P1.emptying.vec[1],$PRE.P1.fireOut[1],P1.disMarksIn.numtrue,P1.disMarksIn.anytrue,$PRE.P2.enableIn.Index,P2.enableIn.Index,$PRE.P2.enableIn.endWhile,P2.enableIn.endWhile,$PRE.P2.enableIn.sumEnablingProbTAin,P2.enableIn.sumEnablingProbTAin,P2.enableIn.randNum,$PRE.P2.enableIn.randNum,P2.enableIn.state128[4],$PRE.P2.enableIn.state128[4],P2.enableIn.state128[3],$PRE.P2.enableIn.state128[3],P2.enableIn.state128[2],$PRE.P2.enableIn.state128[2],P2.enableIn.state128[1],$PRE.P2.enableIn.state128[1],$PRE.P2.enableIn.posTE,P2.enableIn.posTE,$PRE.P2.enableIn.k,P2.enableIn.k,$PRE.P2.enableIn.nTAin,P2.enableIn.nTAin,$PRE.P2.enableIn.nremTAin,P2.enableIn.nremTAin,$PRE.P2.enableIn.arcWeightSum,P2.enableIn.arcWeightSum,P2.delayPassedIn.numtrue,P2.delayPassedIn.anytrue,$whenCondition2,$PRE.P1.enableIn.Index,P1.enableIn.Index,$PRE.P1.enableIn.endWhile,P1.enableIn.endWhile,$PRE.P1.enableIn.sumEnablingProbTAin,P1.enableIn.sumEnablingProbTAin,P1.enableIn.randNum,$PRE.P1.enableIn.randNum,P1.enableIn.state128[4],$PRE.P1.enableIn.state128[4],P1.enableIn.state128[3],$PRE.P1.enableIn.state128[3],P1.enableIn.state128[2],$PRE.P1.enableIn.state128[2],P1.enableIn.state128[1],$PRE.P1.enableIn.state128[1],$PRE.P1.enableIn.posTE,P1.enableIn.posTE,$PRE.P1.enableIn.k,P1.enableIn.k,$PRE.P1.enableIn.nTAin,P1.enableIn.nTAin,$PRE.P1.enableIn.nremTAin,P1.enableIn.nremTAin,$PRE.P1.enableIn.arcWeightSum,P1.enableIn.arcWeightSum,P1.delayPassedIn.numtrue,P1.delayPassedIn.anytrue,$whenCondition1,P3.inTransition[1].disPlace,P3.inTransition[1].maxTokensint,P3.inTransition[1].tint,T1.outPlaces[1].disTransition,T1.outPlaces[1].enabledByInPlaces,P3.reStart,T1.firingCon,T1.inPlaces[2].disTransition,P2.outTransition[1].normalArc,P2.outTransition[1].testValueint,P2.outTransition[1].arcType,P2.outTransition[1].disPlace,P2.outTransition[1].minTokensint,P2.outTransition[1].tint,T1.inPlaces[1].disTransition,P1.outTransition[1].normalArc,P1.outTransition[1].testValueint,P1.outTransition[1].arcType,P1.outTransition[1].disPlace,P1.outTransition[1].minTokensint,P1.outTransition[1].tint,P2.reStart,P1.reStart,P1.disMarksOut.vec[1],P1.disMarksOut.numtrue,P1.disMarksOut.anytrue,P2.disMarksOut.vec[1],P2.disMarksOut.numtrue,P2.disMarksOut.anytrue,P3.disMarksIn.vec[1],P3.disMarksIn.numtrue,P3.disMarksIn.anytrue,P1.delayPassedOut.vec[1],P2.delayPassedOut.vec[1],T1.activation.arcWeightIntIn[1],T1.activation.arcWeightIntIn[2],T1.activation.arcWeightIntOut[1],P3.delayPassedIn.vec[1],T1.activation.disPlaceOut[1],T1.activation.maxTokensInt[1],T1.activation.tIntOut[1],T1.activation.normalArc[2],T1.activation.testValueInt[2],T1.activation.arcType[2],T1.activation.disPlaceIn[2],T1.activation.minTokensInt[2],T1.activation.tIntIn[2],T1.activation.normalArc[1],T1.activation.testValueInt[1],T1.activation.arcType[1],T1.activation.disPlaceIn[1],T1.activation.minTokensInt[1],T1.activation.tIntIn[1],P3.emptying.numtrue,P3.emptying.anytrue,P3.feeding.numtrue,P3.feeding.anytrue,P3.feeding.vec[1],P3.delayPassedIn.numtrue,P3.delayPassedIn.anytrue,P3.enableIn.TEin[1],$PRE.P3.enableIn.TEin[1],P3.enableIn.TEin_[1],P3.enableIn.active[1],P3.fireIn[1],$PRE.P3.fireIn[1],T1.fire_,T1.activation.NoTokens,T1.activation.weaklyOutputActiveVec[1],T1.activation.weaklyInputActiveVec[2],T1.activation.weaklyInputActiveVec[1],T1.activation.active,T1.activation.emptied[1],T1.activation.fed[2],T1.activation.fed[1],P2.emptying.numtrue,P2.emptying.anytrue,P2.emptying.vec[1],P2.feeding.numtrue,P2.feeding.anytrue,P2.delayPassedOut.numtrue,P2.delayPassedOut.anytrue,P2.enableOut.TEout[1],$PRE.P2.enableOut.TEout[1],P2.enableOut.TEout_[1],P2.enableOut.TAout[1],P2.fireOut[1],$PRE.P2.fireOut[1],P1.feeding.numtrue,P1.feeding.anytrue,P1.delayPassedOut.numtrue,P1.delayPassedOut.anytrue,P1.enableOut.TEout[1],$PRE.P1.enableOut.TEout[1],P1.enableOut.TEout_[1],P1.enableOut.TAout[1],P1.fireOut[1],$whenCondition5,$whenCondition4,$whenCondition3)
+ * Number of discrete states: 0 ()
+ * Number of clocked states: 0 ()
+ * Top-level inputs: 0
+Notification: Strong component statistics for initialization (323):
+ * Single equations (assignments): 290
+ * Array equations: 0
+ * Algorithm blocks: 31
+ * Record equations: 1
+ * When equations: 0
+ * If-equations: 0
+ * Equation systems (not torn): 0
+ * Torn equation systems: 1
+ * Mixed (continuous/discrete) equation systems: 0
+Notification: Torn system details for strict tearing set:
+ * Linear torn systems (#iteration vars, #inner vars, density): 0 systems
+ * Non-linear torn systems (#iteration vars, #inner vars): 1 system
+   {(1,6)}
+Notification: Performance of prepare postOptimizeDAE: time 0.002087/0.3983, allocations: 1.907 MB / 0.4961 GB, free: 73.18 MB / 378.7 MB
+Notification: Performance of postOpt lateInlineFunction (simulation): time 0.0005006/0.3988, allocations: 182.5 kB / 0.4962 GB, free: 73.18 MB / 378.7 MB
+Notification: Performance of postOpt wrapFunctionCalls (simulation): time 0.007233/0.4061, allocations: 4.662 MB / 0.5008 GB, free: 72.51 MB / 378.7 MB
+Notification: Performance of postOpt inlineArrayEqn (simulation): time 2.249e-05/0.4061, allocations: 13.08 kB / 0.5008 GB, free: 72.51 MB / 378.7 MB
+Notification: Performance of postOpt constantLinearSystem (simulation): time 8.455e-06/0.4061, allocations: 0.6562 kB / 0.5008 GB, free: 72.51 MB / 378.7 MB
+Notification: Performance of postOpt simplifysemiLinear (simulation): time 1.497e-05/0.4062, allocations: 4.172 kB / 0.5008 GB, free: 72.51 MB / 378.7 MB
+Notification: Performance of postOpt removeSimpleEquations (simulation): time 0.01066/0.4168, allocations: 6.867 MB / 0.5075 GB, free: 71.55 MB / 378.7 MB
+Notification: Performance of postOpt simplifyComplexFunction (simulation): time 0.006828/0.4237, allocations: 4.449 MB / 0.5119 GB, free: 69.92 MB / 378.7 MB
+Notification: Performance of postOpt solveSimpleEquations (simulation): time 0.0004053/0.4241, allocations: 78.11 kB / 0.5119 GB, free: 69.91 MB / 378.7 MB
+Notification: Performance of postOpt tearingSystem (simulation): time 0.0003734/0.4245, allocations: 123.6 kB / 0.512 GB, free: 69.89 MB / 378.7 MB
+Notification: Performance of postOpt inputDerivativesUsed (simulation): time 0.000244/0.4247, allocations: 110.3 kB / 0.5122 GB, free: 69.86 MB / 378.7 MB
+Notification: Performance of postOpt calculateStrongComponentJacobians (simulation): time 0.0004859/0.4252, allocations: 0.6872 MB / 0.5128 GB, free: 69.3 MB / 378.7 MB
+Notification: Performance of postOpt calculateStateSetsJacobians (simulation): time 2.645e-06/0.4253, allocations: 1.875 kB / 0.5128 GB, free: 69.3 MB / 378.7 MB
+Notification: Performance of postOpt symbolicJacobian (simulation): time 0.01445/0.4397, allocations: 7.418 MB / 0.5201 GB, free: 63.17 MB / 378.7 MB
+Notification: Performance of postOpt removeConstants (simulation): time 0.0003095/0.4401, allocations: 213.3 kB / 0.5203 GB, free: 63 MB / 378.7 MB
+Notification: Performance of postOpt simplifyTimeIndepFuncCalls (simulation): time 0.0007995/0.4409, allocations: 199.9 kB / 0.5205 GB, free: 62.8 MB / 378.7 MB
+Notification: Performance of postOpt simplifyAllExpressions (simulation): time 0.001984/0.4429, allocations: 172.1 kB / 0.5206 GB, free: 62.64 MB / 378.7 MB
+Notification: Performance of postOpt findZeroCrossings (simulation): time 0.001148/0.444, allocations: 469.6 kB / 0.5211 GB, free: 62.19 MB / 378.7 MB
+Notification: Performance of postOpt collapseArrayExpressions (simulation): time 0.0004126/0.4445, allocations: 126.5 kB / 0.5212 GB, free: 62.07 MB / 378.7 MB
+Notification: Performance of sorting global known variables: time 0.0007744/0.4453, allocations: 459 kB / 0.5216 GB, free: 61.62 MB / 378.7 MB
+Notification: Performance of sort global known variables: time 3.4e-07/0.4453, allocations: 0 / 0.5216 GB, free: 61.62 MB / 378.7 MB
+Notification: Performance of remove unused functions: time 0.002101/0.4474, allocations: 0.697 MB / 0.5223 GB, free: 60.97 MB / 378.7 MB
+Notification: Model statistics after passing the back-end for simulation:
+ * Number of independent subsystems: 4
+ * Number of states: 3 (P1.t_,P2.t_,P3.t_)
+ * Number of discrete variables: 163 ($whenCondition1,P1.enableIn.state128[1],P1.enableIn.state128[2],P1.enableIn.state128[3],P1.enableIn.state128[4],P1.enableIn.arcWeightSum,P1.enableIn.nremTAin,P1.enableIn.nTAin,P1.enableIn.k,P1.enableIn.posTE,P1.enableIn.randNum,P1.enableIn.sumEnablingProbTAin,P1.enableIn.endWhile,P1.enableIn.Index,P1.delayPassedIn.anytrue,P1.delayPassedIn.numtrue,$whenCondition2,P2.enableIn.state128[1],P2.enableIn.state128[2],P2.enableIn.state128[3],P2.enableIn.state128[4],P2.enableIn.arcWeightSum,P2.enableIn.nremTAin,P2.enableIn.nTAin,P2.enableIn.k,P2.enableIn.posTE,P2.enableIn.randNum,P2.enableIn.sumEnablingProbTAin,P2.enableIn.endWhile,P2.enableIn.Index,P2.delayPassedIn.anytrue,P2.delayPassedIn.numtrue,P3.disMarksInOut,$cse3[1],$cse3[2],$whenCondition8,$whenCondition7,$whenCondition6,$whenCondition3,$whenCondition4,$whenCondition5,P1.outTransition[1].tokenInOut,P1.disMarksInOut,P1.fireOut[1],P1.enableOut.TAout[1],P1.enableOut.TEout_[1],P1.enableOut.state128[1],P1.enableOut.state128[2],P1.enableOut.state128[3],P1.enableOut.state128[4],P1.enableOut.TEout[1],P1.enableOut.disTAout[1],P1.enableOut.remTAout[1],P1.enableOut.cumEnablingProb[1],P1.enableOut.arcWeightSum,P1.enableOut.nremTAout,P1.enableOut.nTAout,P1.enableOut.k,P1.enableOut.posTE,P1.enableOut.randNum,P1.enableOut.sumEnablingProbTAout,P1.enableOut.endWhile,P1.enableOut.Index,P1.delayPassedOut.anytrue,P1.delayPassedOut.numtrue,P1.disMarksOut.anytrue,P1.disMarksOut.numtrue,P1.disMarksIn.anytrue,P1.disMarksIn.numtrue,P1.feeding.anytrue,P1.feeding.numtrue,P1.emptying.vec[1],P1.emptying.anytrue,P1.emptying.numtrue,P2.outTransition[1].tokenInOut,P2.disMarksInOut,P2.fireOut[1],P2.enableOut.TAout[1],P2.enableOut.TEout_[1],P2.enableOut.state128[1],P2.enableOut.state128[2],P2.enableOut.state128[3],P2.enableOut.state128[4],P2.enableOut.TEout[1],P2.enableOut.disTAout[1],P2.enableOut.remTAout[1],P2.enableOut.cumEnablingProb[1],P2.enableOut.arcWeightSum,P2.enableOut.nremTAout,P2.enableOut.nTAout,P2.enableOut.k,P2.enableOut.posTE,P2.enableOut.randNum,P2.enableOut.sumEnablingProbTAout,P2.enableOut.endWhile,P2.enableOut.Index,P2.delayPassedOut.anytrue,P2.delayPassedOut.numtrue,P2.disMarksOut.anytrue,P2.disMarksOut.numtrue,P2.disMarksIn.anytrue,P2.disMarksIn.numtrue,P2.feeding.anytrue,P2.feeding.numtrue,P2.emptying.vec[1],P2.emptying.anytrue,P2.emptying.numtrue,T1.activation.fed[1],T1.activation.fed[2],T1.activation.emptied[1],T1.activation.active,T1.activation.weaklyInputActiveVec[1],T1.activation.weaklyInputActiveVec[2],T1.activation.weaklyOutputActiveVec[1],T1.activation.NoTokens,T1.fire_,P3.fireIn[1],P3.enableIn.active[1],P3.enableIn.TEin_[1],P3.enableIn.state128[1],P3.enableIn.state128[2],P3.enableIn.state128[3],P3.enableIn.state128[4],P3.enableIn.TEin[1],P3.enableIn.disTAin[1],P3.enableIn.remTAin[1],P3.enableIn.cumEnablingProb[1],P3.enableIn.arcWeightSum,P3.enableIn.nremTAin,P3.enableIn.nTAin,P3.enableIn.k,P3.enableIn.posTE,P3.enableIn.randNum,P3.enableIn.sumEnablingProbTAin,P3.enableIn.endWhile,P3.enableIn.Index,P3.delayPassedIn.anytrue,P3.delayPassedIn.numtrue,P3.disMarksOut.anytrue,P3.disMarksOut.numtrue,P3.disMarksIn.anytrue,P3.disMarksIn.numtrue,P3.feeding.vec[1],P3.feeding.anytrue,P3.feeding.numtrue,P3.emptying.anytrue,P3.emptying.numtrue,$whenCondition9,P3.enableOut.state128[1],P3.enableOut.state128[2],P3.enableOut.state128[3],P3.enableOut.state128[4],P3.enableOut.arcWeightSum,P3.enableOut.nremTAout,P3.enableOut.nTAout,P3.enableOut.k,P3.enableOut.posTE,P3.enableOut.randNum,P3.enableOut.sumEnablingProbTAout,P3.enableOut.endWhile,P3.enableOut.Index,P3.delayPassedOut.anytrue,P3.delayPassedOut.numtrue)
+ * Number of discrete states: 148 (P3.delayPassedOut.numtrue,P3.delayPassedOut.anytrue,P3.enableOut.Index,P3.enableOut.endWhile,P3.enableOut.sumEnablingProbTAout,P3.enableOut.state128[4],P3.enableOut.state128[3],P3.enableOut.state128[2],P3.enableOut.state128[1],P3.enableOut.randNum,P3.enableOut.posTE,P3.enableOut.k,P3.enableOut.nTAout,P3.enableOut.nremTAout,P3.enableOut.arcWeightSum,$whenCondition9,P2.disMarksInOut,P1.disMarksInOut,P3.fireIn[1],P3.disMarksOut.anytrue,P3.disMarksIn.anytrue,P2.fireOut[1],P2.disMarksOut.anytrue,P2.disMarksIn.anytrue,P1.fireOut[1],P1.disMarksOut.anytrue,P1.disMarksIn.anytrue,P3.emptying.numtrue,P3.emptying.anytrue,P3.feeding.numtrue,P3.feeding.anytrue,P3.disMarksIn.numtrue,P3.disMarksOut.numtrue,P3.delayPassedIn.numtrue,P3.delayPassedIn.anytrue,P2.emptying.numtrue,P2.emptying.anytrue,P2.feeding.numtrue,P2.feeding.anytrue,P2.disMarksIn.numtrue,P2.disMarksOut.numtrue,P2.delayPassedOut.numtrue,P2.delayPassedOut.anytrue,P1.emptying.numtrue,P1.emptying.anytrue,P1.feeding.numtrue,P1.feeding.anytrue,T1.activation.weaklyOutputActiveVec[1],T1.activation.weaklyInputActiveVec[2],T1.activation.weaklyInputActiveVec[1],T1.activation.active,T1.activation.NoTokens,P3.enableIn.TEin_[1],P3.enableIn.posTE,P3.enableIn.k,P3.enableIn.endWhile,P3.enableIn.state128[4],P3.enableIn.state128[3],P3.enableIn.state128[2],P3.enableIn.state128[1],P3.enableIn.randNum,P3.enableIn.cumEnablingProb[1],P3.enableIn.sumEnablingProbTAin,P3.enableIn.nTAin,P3.enableIn.nremTAin,P3.enableIn.remTAin[1],P3.enableIn.Index,P3.enableIn.arcWeightSum,P3.enableIn.disTAin[1],$whenCondition5,P3.enableIn.TEin[1],P2.enableOut.TEout_[1],P2.enableOut.posTE,P2.enableOut.k,P2.enableOut.endWhile,P2.enableOut.state128[4],P2.enableOut.state128[3],P2.enableOut.state128[2],P2.enableOut.state128[1],P2.enableOut.randNum,P2.enableOut.cumEnablingProb[1],P2.enableOut.sumEnablingProbTAout,P2.enableOut.nTAout,P2.enableOut.nremTAout,P2.enableOut.remTAout[1],P2.enableOut.Index,P2.enableOut.arcWeightSum,P2.enableOut.disTAout[1],$whenCondition4,P2.enableOut.TEout[1],P1.disMarksIn.numtrue,P1.disMarksOut.numtrue,P1.delayPassedOut.numtrue,P1.delayPassedOut.anytrue,P1.enableOut.TEout_[1],P1.enableOut.posTE,P1.enableOut.k,P1.enableOut.endWhile,P1.enableOut.state128[4],P1.enableOut.state128[3],P1.enableOut.state128[2],P1.enableOut.state128[1],P1.enableOut.randNum,P1.enableOut.cumEnablingProb[1],P1.enableOut.sumEnablingProbTAout,P1.enableOut.nTAout,P1.enableOut.nremTAout,P1.enableOut.remTAout[1],P1.enableOut.Index,P1.enableOut.arcWeightSum,P1.enableOut.disTAout[1],$whenCondition3,P1.enableOut.TEout[1],P3.disMarkChange,P2.disMarkChange,P1.disMarkChange,P2.delayPassedIn.numtrue,P2.delayPassedIn.anytrue,P2.enableIn.Index,P2.enableIn.endWhile,P2.enableIn.sumEnablingProbTAin,P2.enableIn.state128[4],P2.enableIn.state128[3],P2.enableIn.state128[2],P2.enableIn.state128[1],P2.enableIn.randNum,P2.enableIn.posTE,P2.enableIn.k,P2.enableIn.nTAin,P2.enableIn.nremTAin,P2.enableIn.arcWeightSum,$whenCondition2,P1.delayPassedIn.numtrue,P1.delayPassedIn.anytrue,P1.enableIn.Index,P1.enableIn.endWhile,P1.enableIn.sumEnablingProbTAin,P1.enableIn.state128[4],P1.enableIn.state128[3],P1.enableIn.state128[2],P1.enableIn.state128[1],P1.enableIn.randNum,P1.enableIn.posTE,P1.enableIn.k,P1.enableIn.nTAin,P1.enableIn.nremTAin,P1.enableIn.arcWeightSum,$whenCondition1)
+ * Number of clocked states: 0 ()
+ * Top-level inputs: 0
+Notification: Strong component statistics for simulation (77):
+ * Single equations (assignments): 49
+ * Array equations: 1
+ * Algorithm blocks: 25
+ * Record equations: 1
+ * When equations: 0
+ * If-equations: 0
+ * Equation systems (not torn): 0
+ * Torn equation systems: 1
+ * Mixed (continuous/discrete) equation systems: 0
+Notification: Torn system details for strict tearing set:
+ * Linear torn systems (#iteration vars, #inner vars, density): 0 systems
+ * Non-linear torn systems (#iteration vars, #inner vars): 1 system
+   {(1,8)}
+Notification: Performance of Backend phase and start with SimCode phase: time 0.001024/0.4484, allocations: 0.5725 MB / 0.5229 GB, free: 60.43 MB / 378.7 MB
+Notification: Performance of simCode: created initialization part: time 0.007334/0.4558, allocations: 6.376 MB / 0.5291 GB, free: 53.75 MB / 378.7 MB
+Notification: Performance of simCode: created event and clocks part: time 5.12e-06/0.4558, allocations: 4 kB / 0.5291 GB, free: 53.75 MB / 378.7 MB
+Notification: Performance of simCode: created simulation system equations: time 0.005002/0.4608, allocations: 7.012 MB / 0.536 GB, free: 46.42 MB / 378.7 MB
+Notification: Performance of simCode: created of all other equations (e.g. parameter, nominal, assert, etc): time 0.001148/0.462, allocations: 252.7 kB / 0.5362 GB, free: 46.18 MB / 378.7 MB
+Notification: Performance of simCode: created linear, non-linear and system jacobian parts: time 0.00651/0.4685, allocations: 4.303 MB / 0.5404 GB, free: 41.89 MB / 378.7 MB
+Notification: Performance of simCode: some other stuff during SimCode phase: time 0.0007553/0.4693, allocations: 1.373 MB / 0.5417 GB, free: 40.49 MB / 378.7 MB
+Notification: Performance of simCode: alias equations: time 0.0008211/0.4701, allocations: 317.9 kB / 0.542 GB, free: 40.18 MB / 378.7 MB
+Notification: Performance of simCode: all other stuff during SimCode phase: time 0.0002083/0.4703, allocations: 99.41 kB / 0.5421 GB, free: 40.09 MB / 378.7 MB
+Notification: Performance of SimCode: time 5.11e-07/0.4703, allocations: 4 kB / 0.5421 GB, free: 40.08 MB / 378.7 MB
+Notification: Performance of Templates: time 0.03971/0.5101, allocations: 29.29 MB / 0.5707 GB, free: 10.57 MB / 378.7 MB
+make -j1 -f PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight.makefile
+(rm -f PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight.pipe ; mkfifo PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight.pipe ; head -c 1048576 < PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight.pipe >> ../files/PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight.sim & ./PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight  -abortSlowSimulation -alarm=480  -emit_protected -lv LOG_STATS > PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight.pipe 2>&1)
+diffSimulationResults("PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight_res.mat","/home/runner/work/PNlib/PNlib/ReferenceFiles/PNlib.Examples.ConTest.ZeroArcWeight.mat","../files/PNlib_master_PNlib.Examples.ConTest.ZeroArcWeight.diff",relTol=0.003,relTolDiffMinMax=0.003,rangeDelta=0.001)
+Reference file matches
